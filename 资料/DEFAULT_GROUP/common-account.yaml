@@ -14,7 +14,7 @@ wx:
     #商户APIV3密钥
     apiV3key: 84dba6dd51cdaf779e55bcabae564b53
     #异步回调地址
-    notifyUrl: http://139.198.30.131:8600/payment/wxPay/notify
+    notifyUrl: http://139.198.30.131:8601/payment/wxPay/notify
 tencent:
   cloud:
     secretId: AKIDxjGYcR0KPFqBH8j6E7***
