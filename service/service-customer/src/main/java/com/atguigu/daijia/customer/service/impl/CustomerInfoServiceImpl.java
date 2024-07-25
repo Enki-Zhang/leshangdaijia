@@ -56,6 +56,7 @@ public class CustomerInfoServiceImpl extends ServiceImpl<CustomerInfoMapper, Cus
         //select * from customer_info ci where ci.wx_open_id = ''
         LambdaQueryWrapper<CustomerInfo> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(CustomerInfo::getWxOpenId,openid);
+//        wrapper.select(CustomerInfo::getId,openid)
         CustomerInfo customerInfo = customerInfoMapper.selectOne(wrapper);
 
         //3 如果第一次登录，添加信息到用户表
